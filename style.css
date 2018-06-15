@@ -1,0 +1,10 @@
+h1, h2 {
+	color:yellow;
+	background-color:violet;
+	margin-left:20px;
+}
+
+#curriculum {
+	color: red;
+	font-size:60px;
+}

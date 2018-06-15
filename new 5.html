@@ -1,0 +1,54 @@
+<html>
+<head>
+	<style>
+
+		@keyframes spin {
+			from {width: 0px;
+				  height: 0px;
+				 }
+				  
+			to 	 {width: 100px;
+				   height: 100px;
+				 }
+		}
+		
+		#spinner {
+			opacity: 0.5;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			animation: spin 1s infinite alternate;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background-color: red;
+		}	
+		
+		@keyframes cspin {
+			from {width: 100px;
+				  height: 100px;
+				 }
+				  
+			to 	 {width: 0px;
+				   height: 0px;
+				 }
+		}
+		
+		#cspinner {
+			animation: cspin 1s infinite alternate;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			background-color: red;
+			opacity: 0.5;
+		}
+	</style>
+</head>
+<body>
+	<div id="spinner"></div>
+	<div id="cspinner"></div>
+</body>
+</html>	
